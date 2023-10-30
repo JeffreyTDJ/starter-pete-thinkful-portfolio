@@ -16,9 +16,18 @@ h3 {
   text-align: center;
 }
 
-/* Header */
+/* Header. I modified this */
 header {
   text-align: center;
+  display: flex; /* I'll start here by using a Flexbox */
+  justify-content: /*Then, center horizontally */
+  align-items: center; /*Then, center verically */ 
+}
+
+/* I added this */
+.header-content {
+  display: flex;
+  align-items: center;
 }
 
 /* Containers */
@@ -49,6 +58,12 @@ a:link {
 
 a:hover {
   color: #f77f00;
+}
+
+/* I added this */
+nav {
+  display: flex;
+  gap: 20 px; /* added some space between the links */
 }
 
 nav a {
