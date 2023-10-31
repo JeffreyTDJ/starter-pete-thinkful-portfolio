@@ -20,7 +20,7 @@ h3 {
 header {
   text-align: center;
   display: flex; /* I'll start here by using a Flexbox */
-  justify-content: /*Then, center horizontally */
+  justify-content: space-between; /*Then, center horizontally */
   align-items: center; /*Then, center verically */ 
 }
 
@@ -31,6 +31,16 @@ header {
 }
 
 /* Containers */
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+
 div {
   background-color: #eae2b7;
   margin: auto;
@@ -77,10 +87,64 @@ img {
   height: auto;
 }
 
+/* center-align the text within the container */
+.center-content {
+  text-align: center;
+}
+
+/* add a new css rule for the flex-container */
+.flex-container {
+  display: flex;
+  align-items: center; /* vertically center the items */
+}
+
+.left-align {
+  text-align: left;
+}
+
+/* style for the image container */
+.image-container {
+  flex: 1; /* distribute available space equally */
+  text-align: center;
+}
+
+/* style for the text container */
+.text-container {
+  flex: 2; /* distribute available space equally */
+  text-align: center;
+  margin: 30px;
+}
+
+/* style for Pete's image*/
 .image-circle {
   border: 2px solid #003049;
   border-radius: 50%;
 }
+
+/* Add a new CSS rule for project container */
+.project-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  
+}
+
+/* Style for each project section */
+.project {
+  flex: 1; /* Set the width for each project with spacing */
+  text-align: center;
+  font-size: 14px;
+  padding: 0 10px;
+  margin: 0;
+}
+
+/* Adjust image width and max-width for projects */
+.project img {
+  width: 100%;
+  max-width: 100%;
+  height:auto;
+}
+
 
 /* Footer */
 footer {

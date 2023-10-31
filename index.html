@@ -13,7 +13,7 @@
   </head>
   <body>
     <!-- Header section -->
-    <!-- wrap bothe the logo text and the "navigation bar" in a <div> container within the <header> to create a single row structure-->
+    <!-- wrap both the logo text and the "navigation bar" in a <div> container within the <header> to create a single row structure-->
     <header>
       <div class="header-content">
         <h1>Pete Thinkful | Artist</h1>
@@ -31,28 +31,34 @@
         <article id="about">
           <h2>About</h2>
           <section>
+          <div class="center-content"> 
             <h3>Hi! I'm Pete Thinkful</h3>
-            <div>
-              <img
-                class="image-circle"
-                src="images/pete-thinkful.png"
-                alt="Pete Thinkful"
-              />
+            <div class="flex-container">
+              <div class="image-container">
+                <img
+                  class="image-circle"
+                  src="images/pete-thinkful.png"
+                  alt="Pete Thinkful"
+                />
+              </div>
+                <div class="text-container">
+                  <p class="left-align">I'm an artist living in Denver, Colorado.</p>
+                  <p class="left-align">As an artist, I'm interested in:</p>
+                  <ul class="left-align">
+                    <li>Producing abstract art</li>
+                    <li>Creating street graffiti art</li>
+                    <li>Connecting with like-minded artists</li>
+                  </ul>
+                  <p class="left-align">
+                    Please feel free to take a look at my website and feel free to
+                    <a href="#contact">contact me</a>.
+                  </p>
+                </div>  
             </div>
-            <p>I'm an artist living in Denver, Colorado.</p>
-            <p>As an artist, I'm interested in:</p>
-            <ul>
-              <li>Producing abstract art</li>
-              <li>Creating street graffiti art</li>
-              <li>Connecting with like-minded artists</li>
-            </ul>
-            <p>
-              Please feel free to take a look at my website and feel free to
-              <a href="#contact">contact me</a>.
-            </p>
+          </div>   
           </section>
 
-          <section>
+          <section class="left-align">
             <h3>Pete's Background</h3>
             <p>
               After graduating college, I became an art teacher and worked with
@@ -72,7 +78,8 @@
         <!-- Portfolio section -->
         <article id="portfolio">
           <h2>Portfolio</h2>
-          <section>
+          <div class="project-container">
+          <section class="project"> 
             <h3>Abstract Red</h3>
             <div>
               <img src="images/abstract-red.png" alt="Abstract Red" />
@@ -83,7 +90,7 @@
             </p>
           </section>
 
-          <section>
+          <section class="project">
             <h3>Spiral Zany</h3>
             <div>
               <img src="images/spiral-zany.png" alt="Spiral Zany" />
@@ -94,7 +101,7 @@
             </p>
           </section>
 
-          <section>
+          <section class="project">
             <h3>Melted Rainbow</h3>
             <div>
               <img src="images/melted-rainbow.png" alt="Melted Rainbow" />
@@ -104,6 +111,7 @@
               locavore shabby chic forage.
             </p>
           </section>
+          </div>  
         </article>
 
         <hr />
